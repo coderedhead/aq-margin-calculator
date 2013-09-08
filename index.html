@@ -109,8 +109,8 @@
                         </div>
                     </div> <!--col4-->  
                     <div id="btns-wrapper">
-                    	<a href="#">EMAIL RESULTS</a>
-                        <a href="#">PRINT RESULTS</a>
+                    	<!--<a href="#">EMAIL RESULTS</a>-->
+                        <a href="#" onclick="printPage()">PRINT RESULTS</a>
                     </div>                  
                 </form>
                 <div class="abs-img"></div>
@@ -133,6 +133,10 @@
         <script src="js/main.js"></script>
 
         <script>
+            function printPage()
+            {
+            	window.print();	
+            }
             var _gaq=[['_setAccount','UA-323630-9'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
