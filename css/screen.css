@@ -123,6 +123,7 @@ a { text-decoration:none; outline:none!important; }
 	.col1 { width:159px; float:left; margin-right:14px; padding-top:56px; }
 	.col2, .col3 { width:164px; float:left; margin-right:10px; }
 	.col4 { width:435px; float:left; }
+	.col41, .col31 { width:159px; float:left; margin-right:14px; padding-top:56px; display:none;  }
 	.col11 { width:155px; float:left; margin-right: 11px; }
 	.col12 { width:269px; float:left; }
 	#content input[type="text"] { width:156px; height:40px; border:1px solid #dbdbdb; -webkit-border-radius: 4px; border-radius: 4px; margin-bottom:26px; 
@@ -159,11 +160,49 @@ footer { background:#2e2f33; height:96px; border-top:3px solid #ff0099; }
    Media Queries
    ========================================================================== */
 @media only screen and (max-width: 960px) {
-
+	.container { width:748px; }
+	#head-bottom h1 { font-size:30px; }
+	#head-bottom h2 { font-size:18px; }
+	footer p { max-width:260px; margin-top:18px; }
+	
+	#content form { padding-bottom:95px; }
+	.col41 { display:block; clear:left; }
+	.h-tablet { display:none; }
 }
 
 @media only screen and (max-width: 748px) {
-
+	.container { width:310px; }
+	#head-top { height:100px; }
+	#logo { width:203px; height:48px; background-size:cover; background-repeat:no-repeat; }
+	#green-logo { width:40px; height:56px; background-size:cover; margin-top:16px; }
+	#head-bottom { padding-top:8px; }
+	#head-bottom h1 { font-size:18px; line-height:1em; margin-bottom:5px; }
+	#head-bottom h2 { font-size:14px; line-height:1.2em;  } 
+	
+	#content form { padding:0; }
+	.col1 { margin-right:15px; width:130px; }
+	.col2 { margin:0; width:160px; }
+	.col3 { margin:0; width:146px; }
+	.col31, .col41 { display:block; clear:left; margin-right:5px; width:130px; }
+	.col31 { margin-right:15px; }
+	.col4 { margin:0; width:173px; }
+	.col11 { width:99px; margin-right:3px; }
+		.col11 .result { width:100%; }
+	.col12 { width:70px; }
+	
+	.title1 { width:130px; height:35px; background-size:cover; margin-bottom:31px; font-size:12px; }
+	.title2 { width:130px; height:38px; background-size:cover; margin-bottom:29px; font-size:12px; }
+	
+	.big-text { font-size:10px; margin-bottom:15px; height:115px; }
+	.long-text { font-size:10px; line-height:1.3em; padding-top:7px; }
+	.medium-text { font-size:10px; line-height:1.3em; padding-top:7px; }
+		.last-medium-text { height:80px; margin-bottom:40px; }
+	#btns-wrapper a { margin-left:25px; width:130px; height:35px; background-size:cover; line-height:25px; }
+	.col11 .result { font-size:14px; }
+	
+	.abs-img { display:none; }
+	
+	#logo-footer { display:none; }
 }
 
 
