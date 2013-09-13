@@ -78,6 +78,23 @@ td { vertical-align: top; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #8C96A0;
+	opacity:1;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #8C96A0;
+	opacity:1;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #8C96A0;
+	opacity:1;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #8C96A0;
+	opacity:1;
+}
+
 /* ==========================================================================
    General styles
    ========================================================================== */
@@ -155,6 +172,7 @@ footer { background:#2e2f33; height:96px; border-top:3px solid #ff0099; }
 	#logo-footer { display:block; overflow:hidden; text-indent:-99999px; width:286px; height:93px; background:url(../images/logo_footer.png); float:right;  }
 	footer p { float:left; font-size:11px; color:#fff; margin-top:23px; }
 		footer span { display:block; color:#ff0099; }
+
 
 /* ==========================================================================
    Media Queries
