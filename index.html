@@ -34,7 +34,7 @@
         
         <div id="content">
         	<div class="container">
-            	<form action="#" class="clearfix">
+            	<form action="export.php" class="clearfix" id="main-form" method="post">
                 	<div class="col1">
                     	<div class="title1 line1">Wholeshale price</div>
                         <div class="title1 line1">Retail price</div>
@@ -47,14 +47,17 @@
                     </div><!--col1-->
                     <div class="col2">
                     	<div class="title3 line1">HEAT PUMPS</div>
-                        <input type="text" id="inp1" value="0"/>
-                        <input type="text" id="inp2" value="0"/>
-                        <div id="inp3" class="result3">$0</div>
+                        <input type="text" id="inp1" name="inp1" placeholder="0"/>
+                        <input type="text" id="inp2" name="inp2" placeholder="0"/>
+                        <input type="text" id="inp3" name="inp3" placeholder="0" value="300"/>
                         <div id="result1" class="result">$0</div>
-                        <input type="text" id="inp4" value="0"/>
+                        <input type="hidden" id="result1h" name="result1h" />
+                        <input type="text" id="inp4" name="inp4" placeholder="0"/>
                         <div id="result2" class="result">$0</div>
-                        <input type="text" id="inp5" value="0"/>
+                        <input type="hidden" id="result2h" name="result2h" />
+                        <input type="text" id="inp5" name="inp5" placeholder="0"/>
                         <div id="result3" class="result">$0</div>
+                        <input type="hidden" id="result3h" name="result3h" />
                     </div><!--col2-->  
                 	<div class="col31">
                     	<div class="title1 line1">Wholeshale price</div>
@@ -68,14 +71,17 @@
                     </div><!--col1-->
                     <div class="col3">
                     	<div class="title3">FOSSIL FUEL<br/>HEATERS</div>
-                        <input type="text" id="inp21" value="0"/>
-                        <input type="text" id="inp22" value="0"/>
-                        <div id="inp23" class="result3">$0</div>
+                        <input type="text" id="inp21" name="inp21" placeholder="0"/>
+                        <input type="text" id="inp22" name="inp22" placeholder="0"/>
+                        <input type="text" id="inp23" name="inp23" placeholder="0" value="1500"/>
                         <div id="result21" class="result">$0</div>
-                        <input type="text" id="inp24" value="0"/>
+                        <input type="hidden" id="result21h" name="result21h" />
+                        <input type="text" id="inp24" name="inp24" placeholder="0"/>
                         <div id="result22" class="result">$0</div>
-                        <input type="text" id="inp25" value="0"/>
+                        <input type="hidden" id="result22h" name="result22h" />
+                        <input type="text" id="inp25" name="inp25" placeholder="0"/>
                         <div id="result23" class="result result2">0</div>
+                        <input type="hidden" id="result23h" name="result23h" name="result23h" />
                         <div class="title2 h-tablet">ADDITIONAL PROFIT<br/>W/ AQUACOMFORT</div>
                     </div><!--col3-->
                 	<div class="col41">
@@ -96,10 +102,15 @@
                         <div class="clearfix">
                         	<div class="col11">
                             	<div id="result31" class="result result2">0</div>
+                                <input type="hidden" id="result31h" name="result31h" />
                                 <div id="result32" class="result">$0</div>
+                                <input type="hidden" id="result32h" name="result32h" />
                                 <div id="result33" class="result result2">0</div>
+                                <input type="hidden" id="result33h" name="result33h" />
                                 <div id="result34" class="result">$0</div>
+                                <input type="hidden" id="result34h" name="result34h" />
                                 <div id="result35" class="result">$0</div>
+                                <input type="hidden" id="result35h" name="result35h" />
                             </div>
                             <div class="col12">
                             	<div class="medium-text">Total Machines</div>
@@ -110,7 +121,7 @@
                     </div> <!--col4-->  
                     <div id="btns-wrapper">
                     	<!--<a href="#">EMAIL RESULTS</a>-->
-                        <a href="#" onclick="printPage()">PRINT RESULTS</a>
+                        <a href="#" id="download-btn">DOWNLOAD PDF</a>
                     </div>                  
                 </form>
                 <div class="abs-img"></div>
@@ -128,15 +139,11 @@
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>        
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <script>
-            function printPage()
-            {
-            	window.print();	
-            }
             var _gaq=[['_setAccount','UA-323630-9'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
